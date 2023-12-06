@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ko2ic.sample.ui.controller.ShortMovieViewModel" />
+        
+    </data>
+    
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:background="@android:color/black"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context=".ui.MainActivity">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
